@@ -9,6 +9,7 @@ body {
   background-color: #0af;
   font-family: sans-serif;
   background-size: cover;
+  background-repeat: no-repeat;
   font-weight: 100;
   font-family: 'Syne Mono', monospace;
 }
