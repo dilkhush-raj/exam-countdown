@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+  text-align: center;
+  background-color: #002;
+  background-image: url(./bg.jpg);
+  font-family: sans-serif;
+  background-size: cover;
+  font-weight: 100;
+}
+
+.container{
+	backdrop-filter: blur(4px);
+	background-color: rgba(0, 0, 0, 0.2);
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-start;
+	position: fixed;
+	right: 0px;
+	gap: 5px;
+	top: 0;
+	padding: 1rem;
+	border-radius: 0 0 0 20px;
+}
+
+h1 {
+  color: #ddd;
+  font-weight: 100;
+  font-size: 40px;
+  padding: 0 1rem;
+}
+
+.clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  align-items: center;
+  justify-content: end;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 150px 120px 120px 120px 120px;
+  gap: 5px;
+}
+
+.clockdiv > div {
+  padding: 15px;
+  border-radius: 3px;
+  /* background: #00bf96; */
+}
+
+.clockdiv div > span {
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 3px;
+  /* background: #00816a; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.smalltext {
+  margin-top: 10px;
+  font-size: 13px;
+}
