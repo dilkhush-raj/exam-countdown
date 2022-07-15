@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
 }
 body {
   text-align: center;
-  background-color: #002;
-  background-image: url(./bg.jpg);
+  background-color: #0af;
   font-family: sans-serif;
   background-size: cover;
   font-weight: 100;
+  font-family: 'Syne Mono', monospace;
 }
 
 .container{
-	backdrop-filter: blur(4px);
-	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(3rem);
+	background-color: rgba(0, 0, 0, 0.5);
 	width: max-content;
 	display: flex;
 	flex-direction: column;
@@ -25,23 +27,28 @@ body {
 	top: 0;
 	padding: 1rem;
 	border-radius: 0 0 0 20px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 0;
+	border-right: 0;
 }
 
 h1 {
-  color: #ddd;
+  color: #fff;
   font-weight: 100;
   font-size: 40px;
   padding: 0 1rem;
+  font-weight: 800;
 }
 
 .clockdiv {
-  font-family: sans-serif;
   color: #fff;
+
   align-items: center;
   justify-content: end;
   font-weight: 100;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 900;
   display: grid;
   grid-template-columns: 150px 120px 120px 120px 120px;
   gap: 5px;
@@ -54,8 +61,9 @@ h1 {
 }
 
 .clockdiv div > span {
-  padding: 15px;
-  font-size: 22px;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 800;
   border-radius: 3px;
   /* background: #00816a; */
   display: inline-flex;
@@ -67,4 +75,24 @@ h1 {
 .smalltext {
   margin-top: 10px;
   font-size: 13px;
+}
+
+#btn{
+	padding: .5rem;
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#btn:hover{
+	background-color: #111;
+	color: white;
+	border-color: white;
+}
+
+.heading{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }

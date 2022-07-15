@@ -48,3 +48,24 @@ document.addEventListener("readystatechange", (event) => {
     }, 1000);
   }
 });
+
+
+const btn = document.getElementById("btn");
+const path = "./img/";
+
+
+let getBackground = () => {
+  // Generating a random number between 1 and 150 
+
+  let id = Math.floor(Math.random() * 7) + 1;
+
+  const finalUrl = path + id + ".jpg";
+  
+  console.log(finalUrl);
+  var element = document.getElementById("body")
+element.style.backgroundImage = "url(" + finalUrl + ")";
+  
+};
+
+btn.addEventListener("click", getBackground);
+getBackground()
